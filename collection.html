@@ -1,0 +1,213 @@
+<html>
+
+<head>
+	<title>Shapes</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		* {box-sizing: border-box}
+		body{
+			margin:0;
+			padding:0;
+			background-color: white;
+
+		}
+
+		h1{
+			color: black;
+			text-align: left;
+			font-style: normal; 
+			letter-spacing: 20px;
+			font-size: 28px;
+			font-weight: 300;
+			padding-left:10vw;
+			position: fixed;
+			top:3vw;
+			font-family: "brandon-grotesque";
+			font-weight: bold;
+			text-shadow:  4px 4px 8px pink, 0 0 25px pink, 0 0 8px pink;
+		}
+
+		a{
+			text-decoration: none;
+			color:black;
+		}
+
+		.background_div{
+			top:5vw;
+			display: block;
+			width: 100%;
+			height: auto;
+			background-color: white;
+		}
+
+
+		.building_div{
+			margin-top:8vw;
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+			height: auto;
+			background-color: none;
+			padding: 5vw;
+		}
+
+
+
+		#building_1{
+			vertical-align: top;
+			margin:2vw;
+			display: inline-block;
+			width:25%;
+			height:30vw;
+			background-color: pink;
+			margin-bottom: 5vw;
+			border-style: double;
+			border-color: black;
+			border-width: 1vw;
+			
+		}
+		#building_2{
+			vertical-align: top;
+			margin:2vw;
+			display: inline-block;
+			width:25%;
+			height:30vw;
+			background-color: pink;
+			margin-bottom: 5vw;
+			border-style: double;
+			border-color: black;
+			border-width: 1vw;
+		}
+		#building_3{
+			vertical-align: top;
+			margin:2vw;
+			display: inline-block;
+			width:25%;
+			height:30vw;
+			background-color: pink;
+			margin-bottom: 5vw;
+			border-style: double;
+			border-color: black;
+			border-width: 1vw;
+		}
+
+		#window{
+			width: 100%;
+			height:65%;
+			padding-top:9%;
+			padding-left:3%;
+			padding-right:3%;
+			background-color: none;
+			text-align: center;
+		}
+
+
+		#rectangles_img{
+			display: inline-block;
+			width: 27%;
+			padding:0.3vw;
+			border-top-left-radius: 2vw;
+			border-top-right-radius: 2vw;
+		}
+
+		#triangles_img{
+			display: inline-block;
+			width: 30%;
+			padding:0.3vw 0 1vw 0;
+		}
+
+		#circles_img{
+			display: inline-block;
+			width: 30%;
+			padding:0.3vw 0.2vw 0.6vw 0.2vw;
+		}
+
+		.door{
+			position: relative;
+			width: 30%;
+			height:auto;
+			margin-left:35%;
+			margin-right:35%;
+			margin-top:90%;
+			text-align: left;
+			background-color: black;
+		}
+
+		#door_image{
+			position: absolute;
+			background-color: black;
+			position: absolute;
+			width: 100%;
+			height: auto;
+		}
+
+		#door_link{
+			position: absolute;
+		    color: white;
+		    font-size: 18px;
+		    text-align: center;
+		    font-family: "Gill Sans MT Pro";
+		    letter-spacing: 3px;
+			font-weight: 500;
+			width: 100%;
+			height:100%;
+			text-decoration: none;
+			margin-top:60%;
+			background-color: green;
+			text-shadow:  2px 2px 4px magenta, 0 0 25px magenta, 0 0 5px magenta;
+		}
+
+		#door_link:hover{
+			text-shadow:  2px 2px 4px red, 0 0 25px red, 0 0 5px red;
+		}
+
+
+
+
+
+
+
+
+	</style>
+</head>
+	<body>
+
+		<h1><a href="collection.html">SHAPES</a></h1>
+	
+		<div class="background_div">
+
+			<div class="building_div">
+
+				<div id="building_1">
+					<div class="door">
+						<img id="door_image" src="images/home/door.jpg"
+						><a id="door_link" href="rectangles.html">ENTER</a>
+					</div>
+				</div>
+
+				<div id="building_2">
+					<div class="door">
+						<img id="door_image" src="images/home/door.jpg"
+						><a id="door_link" href="triangles.html">ENTER</a>
+					</div>
+				</div>
+
+				<div id="building_3">
+					<div class="door">
+						<img id="door_image" src="images/home/door.jpg"
+						><a id="door_link" href="circles.html">ENTER</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+	</body>
+
+</html>

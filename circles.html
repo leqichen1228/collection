@@ -1,0 +1,675 @@
+<html>
+
+<head>
+	<title>Shapes</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		* {box-sizing: border-box}
+		body{
+			margin:0;
+			padding:0;
+			background-color: black;
+
+		}
+
+		h1{
+			vertical-align: top;
+			color: black;
+			text-align: left;
+			font-style: normal; 
+			letter-spacing: 20px;
+			font-size: 28px;
+			font-weight: 300;
+			padding-left:10vw;
+			margin-top: 3vw;
+			position: fixed;
+			font-family: "brandon-grotesque";
+			font-weight: bold;
+			text-shadow:  4px 4px 8px pink, 0 0 25px pink, 0 0 8px pink;
+		}
+
+		a{
+			text-decoration: none;
+			color:black;
+		}
+
+		.background_div{
+			position: relative;
+			top:10vw;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			background-color: none;
+		}
+
+		.quarter_div{
+			vertical-align: top;
+			display: inline-block;
+			width: 25%;
+			height: 50%;
+			background-color: none;
+			clip-path: polygon(100% 100%, 100% 0, 0 50%);
+		}
+
+		.quarter_div_big{
+			vertical-align: top;
+			display: inline-block;
+			width: 25%;
+			height: 50%;
+			background-color: none;
+			transition: 1s ease;
+			border-radius: 50%;
+		}
+
+		#one_eighth{
+			vertical-align: top;
+			display: inline-block;
+			width: 25%;
+			height: 50%;
+			background-color: none;
+			clip-path: none;
+		}
+
+		.quarter_image{
+			background-color: none;
+		}
+
+
+		.div_1{
+			border-radius: 50%;
+			background-color:white;
+			transition: 1s ease;
+			display: inline-block;
+			width: 50%;
+			height: 50%;
+			background-color: none;
+			
+		}
+
+
+		.div_2{
+			border-radius: 50%;
+			background-color:pink;
+			transition: 1s ease;
+			vertical-align: top;
+			display: inline-block;
+			width: 50%;
+			height: 50%;
+			background-color: none;	
+			
+		}
+
+		.div_4{
+			border-radius: 50%;
+			background-color:magenta;
+			transition: 1s ease;	
+			vertical-align: top;
+			display: inline-block;
+			width: 50%;
+			height: 50%;
+			background-color: none;	
+				
+		}
+
+
+		.image_div{
+			background-color: none;
+			transition: 1s ease;
+			vertical-align: top;
+			display: inline-block;
+			width: 50%;
+			height: 50%;
+			background-color: none;
+			
+		}
+
+		img{
+			border-radius: 50%;
+			width: 100%;
+			height:100%;
+		}
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+	<body>
+
+		<h1><a href="collection.html">SHAPES</a></h1>
+	
+		<div class="background_div">
+			<div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/1.jpg"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/2.jpg"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/3.jpg"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/4.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/5.jpg"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/6.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/7.jpg"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div_big" class="quarter_image" onmouseover="onMouseOver_5()" onmouseout="onMouseOut_5()"><img src="images/circles/8.jpg"></div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/9.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div_big" class="quarter_image" onmouseover="onMouseOver_5()" onmouseout="onMouseOut_5()"><img src="images/circles/10.jpg"></div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/11.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>			
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/12.jpg"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/13.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/14.jpg"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/15.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/16.jpg"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div_big" class="quarter_image" onmouseover="onMouseOver_5()" onmouseout="onMouseOut_5()"><img src="images/circles/17.jpg"></div
+			><div class="quarter_div" id="one_eighth">
+				<div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/18.jpg"></div
+				><div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div_big" class="quarter_image" onmouseover="onMouseOver_5()" onmouseout="onMouseOut_5()"><img src="images/circles/19.jpg"></div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/20.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/21.jpg"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/22.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/23.jpg"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/24.jpg"></div>			
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/25.jpg"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_4" onmouseover="onMouseOver_4()" onmouseout="onMouseOut_4()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/26.jpg"></div>				
+			</div
+			><div class="quarter_div" id="one_eighth">
+				<div class="div_1" onmouseover="onMouseOver_1()" onmouseout="onMouseOut_1()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="div_2" onmouseover="onMouseOver_2()" onmouseout="onMouseOut_2()"></div
+				><div class="image_div" onmouseover="onMouseOver_3()" onmouseout="onMouseOut_3()"><img src="images/circles/27.png"></div>			
+			</div>
+		
+		</div>
+
+
+	<script>
+		function onMouseOver_1() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		function onMouseOut_1() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		function onMouseOver_2() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+				elements[i].style.width = "75%";
+				elements[i].style.height = "75%";
+				elements[i].style.margin = "-12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.width = "12.5%";
+				elements[i].style.height = "25%";
+				elements[i].style.marginLeft = "6.25%";
+				elements[i].style.marginRight = "6.25%";
+				elements[i].style.marginTop = "6.25%";
+				elements[i].style.marginBottom = "6.25%";
+		  	}
+		}
+
+		function onMouseOut_2() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.width = "25%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+		}
+
+		function onMouseOver_3() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.width = "75%";
+				elements[i].style.height = "75%";
+				elements[i].style.margin = "-12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		function onMouseOut_3() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		function onMouseOver_4() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "75%";
+				elements[i].style.height = "75%";
+				elements[i].style.margin = "-12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+				elements[i].style.width = "25%";
+				elements[i].style.height = "25%";
+				elements[i].style.margin = "12.5%";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		function onMouseOut_4() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+				elements[i].style.width = "50%";
+				elements[i].style.height = "50%";
+				elements[i].style.margin = "0";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		function onMouseOver_5() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		function onMouseOut_5() {
+			var elements = document.getElementsByClassName("div_1");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "white";
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_2");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "pink";
+		  	}
+
+		  	var elements = document.getElementsByClassName("image_div");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+
+		  	var elements = document.getElementsByClassName("div_4");
+			
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.backgroundColor = "magenta";
+		  	}
+
+		  	var elements = document.getElementsByClassName("quarter_div_big");
+			
+			for (var i = 0; i < elements.length; i++) {
+		  	}
+		}
+
+		
+
+
+	</script>
+
+
+
+
+	</body>
+
+</html>
